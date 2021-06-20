@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width,initial-scaled-1.0">
+<title>Sending Email</title>
+<marquee behavior="scroll" direction="left">!!welcome here to fill the form!!</marquee>
+<script src="script.js"></script>
+<link rel="stylesheet" href="script.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_N7mt8VvKexppCiiZV4rmq");
+})();
+</script>
+</head>
+<body>
+<p><input type="text" id="fromName" placeholder="Enter from name"></p>
+<p><input type="text" id="toName" placeholder="Enter recepiant's name"></p>
+<p><input type="text" id="toMail" placeholder="Enter recepiant's mail"></p>
+<p><input type="text" id="msg" placeholder="Enter to message"></p>
+<button onclick="sendMail()">Send Email</button>
+</body>
+</html>
